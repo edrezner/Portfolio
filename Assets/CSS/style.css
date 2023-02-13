@@ -60,3 +60,45 @@ body {
 .content {
     color: #EFFCFF;
 }
+
+.content article {
+    display: flex;
+}
+
+.aside, .content p, .content a {
+    flex: 1;
+}
+
+.HTML, .JS, .Node, .MERN {
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.HTML {
+    background-image: url(.././Images/HTMLCSS.jpg);
+}
+
+.JS {
+    background-image: url(.././Images/JS.jpg);
+}
+
+.Node {
+    background-image: url(.././Images/Node.png);
+}
+
+.MERN {
+    background-image: url(.././Images/MERN.png)
+}
+
+.contact a {
+    color: #EFFCFF;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: rgb(75, 126, 238);
+}
+
+@media screen and (max-width: 760px) {
+    
+}
