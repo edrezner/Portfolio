@@ -11,16 +11,18 @@ body {
 
 .header {
     background-color: #EFFCFF;
-    display: inline-flex;
+    display: flex;
     width: 100%;
+    justify-content: space-around;
 }
 
 .header img {
     padding: 10px 0;
-    height: auto;
-    width: 150px;
+    width: 200px;
+    height: 300px;
     border-radius: 100px;
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .header h1 {
@@ -57,6 +59,10 @@ body {
     color: rgb(75, 126, 238);
 }
 
+.about h2 {
+    text-align: center;
+}
+
 .content {
     color: #EFFCFF;
 }
@@ -65,16 +71,39 @@ body {
     display: flex;
 }
 
-.aside, .content p, .content a {
-    flex: 1;
+.aside h2 {
+    text-align: center;
 }
 
-.HTML, .JS, .Node, .MERN {
+.aside {
+    flex: 0 0 20%;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.projects {
+    width: 100%;
+}
+
+.projects div {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.projects div a {
+    flex: 0 0 45%;    
+}
+
+
+
+.first-project, .JS, .Node, .MERN {
     background-size: 100% 100%;
     background-position: center center;
+    width: 100%;
 }
 
-.HTML {
+.first-project {
     background-image: url(.././Images/HTMLCSS.jpg);
 }
 
@@ -90,6 +119,10 @@ body {
     background-image: url(.././Images/MERN.png)
 }
 
+.first-project {
+    height: 400px;
+}
+
 .contact a {
     color: #EFFCFF;
     text-decoration: none;
@@ -100,5 +133,5 @@ body {
 }
 
 @media screen and (max-width: 760px) {
-    
+
 }
