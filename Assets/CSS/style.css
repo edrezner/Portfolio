@@ -5,33 +5,58 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: #373737;
     font-family: 'Trebuchet MS';
 }
 
 .header {
-    background-image: linear-gradient(to bottom right, #103769 , #78B1FB );
-}
-
-img {
-    padding: 10px 0 10px 10px;
-}
-
-nav {
-    display: flexbox;
-}
-
-h1 {
-    padding: 0 10px 10px 10px;
+    background-color: #EFFCFF;
     display: inline-flex;
+    width: 100%;
 }
 
-ul {
-    float: right;
+.header img {
+    padding: 10px 0;
+    height: auto;
+    width: 150px;
+    border-radius: 100px;
+    margin: auto;
+}
+
+.header h1 {
+    font-size: 40px;
+    color: #373737;
+    
+}
+
+.header ul {
     display: inline-flex;
+    justify-content: flex-end;
 }
 
-li {
+.header ul li {
     list-style: none;
-    margin: 0 10px 10px 0;
+    font-size: 25px;
+    display: inline-flex;
+    padding: 100% 10px 0 10px;
+}
+
+.header ul li a {
+    color: #373737;
+}
+
+.header a {
+    text-decoration: none;
+} 
+
+.header a:visited {
+    color: #373737;
+}
+
+.header a:hover {
+    color: rgb(75, 126, 238);
+}
+
+.content {
+    color: #EFFCFF;
 }
