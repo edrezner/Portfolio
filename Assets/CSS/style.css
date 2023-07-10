@@ -1,137 +1,139 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: #373737;
-    font-family: 'Trebuchet MS';
+  background-color: #373737;
+  font-family: "Trebuchet MS";
+}
+
+.project-image {
+  height: 10vw !important;
+  width: 10w !important;
+  object-fit: cover !important;
 }
 
 .header {
-    background-color: #EFFCFF;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+  display: flex;
+  width: 100%;
+  color: #effcff;
+  justify-content: space-around;
+  background-image: url(/Assets/Images/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.png);
 }
 
 .header img {
-    padding: 10px 0;
-    width: 200px;
-    height: 300px;
-    border-radius: 100px;
-    margin-top: auto;
-    margin-bottom: auto;
+  padding: 10px 0;
+  width: 200px;
+  height: 300px;
+  border-radius: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .header h1 {
-    font-size: 40px;
-    color: #373737;
-    
+  font-size: 40px;
 }
 
-.header ul {
-    display: inline-flex;
-    justify-content: flex-end;
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  color: #effcff;
 }
 
-.header ul li {
-    list-style: none;
-    font-size: 25px;
-    display: inline-flex;
-    padding: 100% 10px 0 10px;
+nav ul li {
+  list-style: none;
+  font-size: 25px;
+  display: inline-flex;
+  padding: 100% 10px 0 10px;
 }
 
-.header ul li a {
-    color: #373737;
+nav ul li a {
+  color: #effcff;
+  text-decoration: none;
 }
 
-.header a {
-    text-decoration: none;
-} 
-
-.header a:visited {
-    color: #373737;
-}
-
-.header a:hover {
-    color: rgb(75, 126, 238);
-}
-
-.about h2 {
-    text-align: center;
+nav ul li a:hover {
+  color: rgb(75, 126, 238);
+  border-left: 6px solid rgb(75, 126, 238);
 }
 
 .content {
-    color: #EFFCFF;
+  color: #effcff;
 }
 
 .content article {
-    display: flex;
-}
-
-.aside h2 {
-    text-align: center;
+  display: flex;
 }
 
 .aside {
-    flex: 0 0 20%;
-    margin: auto;
-    margin-left: 0;
-    margin-right: 0;
+  flex: 0 0 20%;
+  margin: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.aside h2 {
+  text-align: center;
+  color: rgb(75, 126, 238);
+}
+
+.about-p-content,
+.projects,
+.contact-links {
+  border-left: 6px solid rgb(75, 126, 238);
+  padding: 10vw;
+  flex: 1 1 80%;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-p-content p {
+  margin-top: 20px;
 }
 
 .projects {
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
 }
 
-.projects div {
-    display: flex;
-    justify-content: space-between;    
+.projects .project {
+  flex: 0 0 calc(50% - 10px);
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #effcff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.projects div a {
-    flex: 0 0 45%;    
+.projects .project span {
+  margin-top: 10px;
+  text-align: center;
 }
 
-
-
-.first-project, .JS, .Node, .MERN {
-    background-size: 100% 100%;
-    background-position: center center;
-    width: 100%;
+.contact-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #effcff;
+  margin-bottom: 20px;
 }
 
-.first-project {
-    background-image: url(.././Images/HTMLCSS.jpg);
+.contact-links a img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-.JS {
-    background-image: url(.././Images/JS.jpg);
-}
-
-.Node {
-    background-image: url(.././Images/Node.png);
-}
-
-.MERN {
-    background-image: url(.././Images/MERN.png)
-}
-
-.first-project {
-    height: 400px;
-}
-
-.contact a {
-    color: #EFFCFF;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    color: rgb(75, 126, 238);
-}
-
-@media screen and (max-width: 760px) {
-
+.contact-links a span {
+  text-align: center;
 }
