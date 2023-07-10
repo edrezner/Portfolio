@@ -10,8 +10,8 @@ body {
 }
 
 .project-image {
-  height: 10vw !important;
-  width: 10w !important;
+  height: 15vw !important;
+  width: 15w !important;
   object-fit: cover !important;
 }
 
@@ -94,6 +94,7 @@ nav ul li a:hover {
 
 .about-p-content p {
   margin-top: 20px;
+  font-size: 24px;
 }
 
 .projects {
@@ -127,13 +128,17 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
-.contact-links a img {
-  width: 50px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
 .contact-links a span {
   text-align: center;
+}
+
+.contact-link {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 750px) {
+  .about-p-content p,
+  .contact-link {
+    font-size: 16px;
+  }
 }
